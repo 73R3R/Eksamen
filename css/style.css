@@ -1,0 +1,153 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*header*/
+
+#logo{
+    scale: 80%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    padding-right: 30px;
+}
+#navlist{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+.navbar{
+    text-decoration: none;
+    color: #000;
+}
+.navbargul{
+    text-decoration: none;
+    color: #000;
+    background-color: #e6bd43;
+    font-weight: 1000;
+    padding: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.navbargul:hover {
+    background-color: #000;
+    color: #e6bd43;
+}
+
+/*footer*/
+
+footer{
+    display: flex;
+    background-color: #252525;
+    justify-content: space-between;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    align-items: center;
+}
+.sosialem{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    justify-content: space-around;
+    color: #fff;
+}
+#footerlogo{
+    text-decoration: none;
+    color: #fff;
+    align-self: center;
+    scale: 80%;
+}
+.companyfooter{
+    color: #fff;
+}
+
+/*index*/
+
+#container{
+    position: relative;
+    overflow: hidden;
+    height: 430px;
+}
+#video{
+    align-self: center;
+    position: relative;
+    left: 60%; 
+    top: 95%;
+    transform: translate(-50%, -50%);
+}
+#vidtext{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+}
+.header{
+    font-size: 50px;
+    font-weight: 750;
+    margin: 0;
+}
+.midarticle{
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.gularticle{
+    background-color: #e6bd43;
+    display: flex;
+    justify-content: flex-start;
+    padding: 50px;
+}
+.gularticletext{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    padding: 45px;
+}
+.gularticletxt{
+    max-width: 70%;
+    padding-bottom: 10px;
+}
+.knappgul{
+    border: 4px solid #000;
+    text-align: center;
+    max-width: 20%;
+    padding: 20px;
+    font-weight: 750;
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#ourservices{
+    text-align: center;
+    font-size: 45
+    px;
+    padding: 50px;
+}
+.branding{
+    text-decoration: none;
+    text-align: center;
+    max-width: 200px;
+}
+.newsletter{
+    background-color: rgb(199, 207, 226);
+}
+#midplace{
+    width: 100%;
+    height: 100%;
+    min-width: 300px;
+    max-width: 400px;
+}
