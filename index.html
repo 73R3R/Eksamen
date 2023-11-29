@@ -8,82 +8,103 @@
         <link href="css/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
         <link href="css/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
         <link href="css/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
-        <title>Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <meta property="og:title" content="Facebook">
+        <meta property="og:description" content="Facebook kobling i footer">
+        <meta property="og:url" content="https://nb-no.facebook.com/">
+        <meta property="og:title" content="Instagram">
+        <meta property="og:description" content="Instagram kobling i footer">
+        <meta property="og:url" content="https://www.instagram.com/">
+        <meta property="og:title" content="Linkdin">
+        <meta property="og:description" content="Linkdin kobling i footer">
+        <meta property="og:url" content="https://no.linkedin.com/">
+        <meta property="og:video" content="Ressurser.zip">
+        <meta property="og:description" content="Home, General information, services, what can we offer, UX">
+        <script defer src="css/navbar.js"></script>
+        <title>Home, services, contact</title>
+        <link rel="shortcut icon" href="img/ressurser/ressurser/logo1.png">
     </head>
     <body>
-        <header>
+        <header aria-label="header">
             <a href="index.html"><img id="logo" src="img/ressurser/ressurser/logo1.png" alt="logo"></a>
             <nav>
-                <ul id="navlist">
-                    <li><a class="navbar" href="index.html">Home</a></li>
-                    <li><a class="navbar" href="products.html">Portfolio</a></li>
-                    <li><a class="navbar" href="about.html">About</a></li>
-                    <li><a class="navbargul" href="about.html">Contact</a></li>
+                <ul id="navlist" aria-label="navigasjon">
+                    <li><a class="home" href="index.html" aria-label="hjem">Home</a></li>
+                    <li><a class="products" href="products.html" aria-label="portfolio">Portfolio</a></li>
+                    <li><a class="about" href="about.html" aria-label="om oss">About</a></li>
+                    <li><a class="navbargul" href="about.html#contactinfo" aria-label="kontakt oss">Contact</a></li>
                 </ul>
             </nav>
         </header>
+        <a class="upage" href="index.html" aria-label="ta meg til toppen"><i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i></a>
         <section>
             <div id="container">
-                <video id="video" autoplay muted preload="auto" controls loop>
+                <img id="bildebvid" src="img/bakgrunn.jpeg" alt="bakgrunn">
+                <video id="video" autoplay muted loop>
                     <source src="img/ressurser/ressurser/mountains.mp4" type="video/mp4">
                 </video>
                 <div id="vidtext">
                     <h1 class="header">Home</h1>
                     <p class="videotext">At vero eos et accusamus et iusto dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                    <a class="navbargul">Read more about our services</a>
+                    <a href="#ourservices" class="navbargul">Read more about our services</a>
                 </div>
             </div>
         </section>
         <section>
             <article class="midarticle">
-                <h2>In need of help with UX design and web development?</h2>
+                <h2 aria-label="vi hjelper ux design og web utvikling">In need of help with UX design and web development?</h2>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus accumsan tortor posuere ac ut consequat semper viverra nam.
             </article>
         </section>
         <section class="gularticle">
             <img id="midplace" src="img/midplaceholder.png" alt="placeholder 400x400">
             <article class="gularticletext">
-                <h3>About Our Company</h3>
+                <h3 aria-label="mer om oss">About Our Company</h3>
                 <p class="gularticletxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-                <a class="knappgul">Read more about us</a>
+                <a href="about.html" class="knappgul" aria-label="les mer">Read more about us</a>
             </article>
         </section>
         <section>
             <h2 id="ourservices">Our services</h2>
             <section class="services">
                 <article class="branding">
-                    <i class="fa-solid fa-users" style="color: #000000;"></i>
-                    <h4>Branding</h4>
+                    <i id="users" class="fa-solid fa-users" style="color: #000000;"></i>
+                    <h4 aria-label="branding">Branding</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article class="branding">
-                    <i class="fa-solid fa-cloud-arrow-up" style="color: #000000;"></i>
-                    <h4>Branding</h4>
+                    <i id="cloud" class="fa-solid fa-cloud-arrow-up" style="color: #000000;"></i>
+                    <h4 aria-label="branding">Branding</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article class="branding">
-                    <i class="fa-solid fa-code" style="color: #000000;"></i>
-                    <h4>Branding</h4>
+                    <i id="code" class="fa-solid fa-code" style="color: #000000;"></i>
+                    <h4 aria-label="branding">Branding</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
                 <article class="branding">
-                    <i class="fa-solid fa-wifi" style="color: #000000;"></i>
-                    <h4>Branding</h4>
+                    <i id="wifi" class="fa-solid fa-wifi" style="color: #000000;"></i>
+                    <h4 aria-label="branding" >Branding</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </article>
             </section>
         </section>
         <section class="newsletter">
-            <h4>Sign up for our newsletter</h4>
-            <span>Nora@epost.no</span>
+            <h4 class="newsletter1" aria-label="nyhetsbrev">Sign up for our newsletter</h4>
+            <article class="newsletter2">
+                <input aria-label="fyll inn epost" type="text" placeholder="Nora@epost.no" name="mail" required>
+                <a class="navbargul" aria-label="registrer">Sign me up!</a>
+            </article>
         </section>
         <footer>
             <a href="index.html" id="footerlogo"><img src="img/ressurser/ressurser/logo1.png" alt="logo"></a>
             <p class="companyfooter">Companyrights Companyname 2023</p>
             <ul class="sosialem">
-                <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
-                <i class="fa-brands fa-square-instagram" style="color: #ffffff;"></i>
-                <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+                <li><a href="https://nb-no.facebook.com/"><i id="fb" class="fa-brands fa-square-facebook" style="color: #ffffff;" aria-label="vår facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i id="insta" class="fa-brands fa-square-instagram" style="color: #ffffff;" aria-label="vår instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i id="linkd" class="fa-brands fa-linkedin" style="color: #ffffff;" aria-label="linkd"></i></a></li>
             </ul>
         </footer>
     </body>

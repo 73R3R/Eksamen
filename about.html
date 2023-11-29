@@ -8,27 +8,110 @@
         <link href="css/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
         <link href="css/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
         <link href="css/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
-        <title>About</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <meta property="og:title" content="Facebook">
+        <meta property="og:description" content="Facebook kobling i footer">
+        <meta property="og:url" content="https://nb-no.facebook.com/">
+        <meta property="og:title" content="Instagram">
+        <meta property="og:description" content="Instagram kobling i footer">
+        <meta property="og:url" content="https://www.instagram.com/">
+        <meta property="og:title" content="Linkdin">
+        <meta property="og:description" content="Linkdin kobling i footer">
+        <meta property="og:url" content="https://no.linkedin.com/">
+        <meta property="og:description" content="Company, Contact information, details, information, about us, map, message us">
+        <script defer src="css/navbar.js"></script>
+        <title>About, Contact, information</title>
+        <link rel="shortcut icon" href="img/ressurser/ressurser/logo1.png">
     </head>
     <body>
-        <header>
-            <a href="index.html" id="Logo"><img src="img/ressurser/ressurser/logo1.png" alt="logo"></a>
+        <header aria-label="header">
+            <a href="index.html"><img id="logo" src="img/ressurser/ressurser/logo1.png" alt="logo"></a>
             <nav>
-                <ul id="navlist">
-                    <li><a class="navbar" href="index.html">Home</a></li>
-                    <li><a class="navbar" href="products.html">Portfolio</a></li>
-                    <li><a class="navbar" href="about.html">About</a></li>
-                    <li><a class="navbargul" href="about.html">Contact</a></li>
+                <ul id="navlist" aria-label="navigasjon">
+                    <li><a class="home" href="index.html" aria-label="hjem">Home</a></li>
+                    <li><a class="products" href="products.html" aria-label="portfolio">Portfolio</a></li>
+                    <li><a class="about" href="about.html" aria-label="om oss">About</a></li>
+                    <li><a class="navbargul" href="about.html#contactinfo" aria-label="kontakt oss">Contact</a></li>
                 </ul>
             </nav>
         </header>
+        <a class="upage" href="about.html" aria-label="ta meg til toppen"><i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i></a>
+        <main>
+            <section>
+                <img id="aboutb" src="img/bakgrunn.jpeg" alt="bakgrunn">
+                <article id="aboutbtext">
+                    <p>Company name</p>
+                    <h1>About Our Company</h1>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+                    <a href="#contactinfo" class="navbargul" aria-label="kontakt oss">Get in touch with us</a>
+                </article>
+            </section>
+            <section>
+                <h2 id="ourservices">Our services</h2>
+                <section class="services">
+                    <article class="branding">
+                        <i id="users" class="fa-solid fa-users" style="color: #000000;"></i>
+                        <h4 aria-label="branding">Branding</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </article>
+                    <article class="branding">
+                        <i id="cloud" class="fa-solid fa-cloud-arrow-up" style="color: #000000;"></i>
+                        <h4 aria-label="branding">Branding</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </article>
+                    <article class="branding">
+                        <i id="code" class="fa-solid fa-code" style="color: #000000;"></i>
+                        <h4 aria-label="branding">Branding</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </article>
+                    <article class="branding">
+                        <i id="wifi" class="fa-solid fa-wifi" style="color: #000000;"></i>
+                        <h4 aria-label="branding">Branding</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </article>
+                </section>
+                <section class="clients">
+                    <h3>Some of our clients</h3>
+                    <article>
+                        <img class="clientsb" src="img/ressurser/ressurser/logo1.png" alt="logo1">
+                        <img class="clientsb" src="img/ressurser/ressurser/logo2.png" alt="logo2">
+                        <img class="clientsb" src="img/ressurser/ressurser/logo3.png" alt="logo3">
+                    </article>
+                </section>
+                <section class="cus1">
+                    <h2 id="contactinfo" aria-label="Kontakt oss">Contact us</h2>
+                    <section class="cus">
+                        <article class="aboutart1">
+                            <h4>Send us a message</h4>
+                            <p>Name</p>
+                            <input class="inputsmall" type="text" placeholder="Ola Nordmann.." aria-label="fyll inn navn">
+                            <p>Subject</p>
+                            <input class="inputsmall" type="text" placeholder="Branding.." aria-label="fyll inn tema">
+                            <p>Message</p>
+                            <input class="inputlarge" type="text" aria-label="skriv melding">
+                            <a class="navbargul1">Send message</a>
+                        </article>
+                        <article class="aboutart1">
+                            <h4>Contact information</h4>
+                            <p>Nec dui nunc mattis enim ut tellus. Urna id volutpat lacus laoreet non curabitur gravida. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Sit amet nisl suscipit adipiscing bibendum.</p>
+                            <p aria-label="adresse"><i class="fa-solid fa-location-pin" style="color: #000000;"></i>B R A Veien 4, 1757 Halden</p>
+                            <p aria-label="telefonnummer"><i class="fa-solid fa-phone" style="color: #000000;"></i>69 60 80 00</p>
+                            <p aria-label="epost adresse"><i class="fa-solid fa-envelope" style="color: #000000;"></i>postmottak@hiof.no</p>
+                        </article>
+                    </section>
+                </section>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4263.169534008146!2d11.351038694864505!3d59.129454848041824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1701166417073!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </main>
         <footer>
             <a href="index.html" id="footerlogo"><img src="img/ressurser/ressurser/logo1.png" alt="logo"></a>
             <p class="companyfooter">Companyrights Companyname 2023</p>
             <ul class="sosialem">
-                <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
-                <i class="fa-brands fa-square-instagram" style="color: #ffffff;"></i>
-                <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+                <li><a href="https://nb-no.facebook.com/"><i id="fb" class="fa-brands fa-square-facebook" style="color: #ffffff;" aria-label="vår facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i id="insta" class="fa-brands fa-square-instagram" style="color: #ffffff;" aria-label="vår instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i id="linkd" class="fa-brands fa-linkedin" style="color: #ffffff;" aria-label="linkd"></i></a></li>
             </ul>
         </footer>
     </body>
